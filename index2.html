@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5 и CSS3 сайт</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Porno X</span>
+    </div>
+    <div id="about">
+      <a href="index.html" title="ONLINE" onclick="slowScroll('#main')">HOME</a>
+      <a href="index2.html" onclick="slowScroll('#overview')" title="FEMDOM">FEMDOM</a>
+      <a href="index3.html" onclick="slowScroll('#contacts')" title="REGISTRATION">REGISTRATION</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+  </header>
+  <br>
+  <br>
+
+  <div id="top">
+    <h1>Porno X</h1>
+    <h3></h3>
+  </div>
+
+
+
+  <div id="overview">
+    <h4>FEMDOM</h4>
+    <br>
+
+      <video controls width="300" src="feet.mp4"></video>
+      <video controls width="300" src="feet.mp4"></video>
+      <video controls width="300" src="feet.mp4"></video>
+      <video controls width="300" src="feet.mp4"></video>
+      <br>
+      <br>
+      <video controls width="300" src="feet.mp4"></video>
+      <video controls width="300" src="feet.mp4"></video>
+      <video controls width="300" src="feet.mp4"></video>
+      <video controls width="300" src="feet.mp4"></video>
+      <br>
+      <br>
+      <video controls width="300" src="feet.mp4"></video>
+      <video controls width="300" src="feet.mp4"></video>
+      <video controls width="300" src="feet.mp4"></video>
+      <video controls width="300" src="feet.mp4"></video>
+
+ <div id="overview">
+    <h2>ONLINE 1345</h2>
+    </div>
+  </div>
+
+
+    </form>
+  </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
